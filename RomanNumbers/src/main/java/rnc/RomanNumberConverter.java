@@ -59,7 +59,7 @@ public class RomanNumberConverter {
       // Vérification validité
       boolean valid = false;
       for (char c : allowedRoman) {
-        if (romanNumber[0] == c) { // Erreur ici !
+        if (romanNumber.charAt(0) == c) { 
           valid = true;
         }
       }
