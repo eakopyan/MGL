@@ -52,7 +52,7 @@ public class RomanNumberConverterTest {
 
   @Test
   public void checkValidR() {
-    assertThatThrownBy(() -> RNC.convertRtoI("A"))
+    assertThatThrownBy(() -> RNC.convertInt("A"))
       .isInstanceOf(IllegalArgumentException.class)
       .hasMessageContaining("not a valid roman number");
   }
